@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiKrolVPN — Свободный интернет и быстрый YouTube</title>
+    <style>
+        :root {
+            --bg-color: #0f0f12;
+            --card-bg: #18181c;
+            --accent-color: #ff2a5f;
+            --text-color: #ffffff;
+            --text-muted: #9494a6;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 20px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #ff2a5f, #ff7e5f);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        header p {
+            color: var(--text-muted);
+            font-size: 1.2rem;
+            margin-top: 0;
+        }
+
+        .hero {
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            border: 1px solid rgba(255, 42, 95, 0.1);
+            margin: 40px 0;
+        }
+
+        .hero h2 {
+            font-size: 2rem;
+            margin-top: 0;
+        }
+
+        .hero p {
+            color: var(--text-muted);
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .badge {
+            background: rgba(255, 42, 95, 0.2);
+            color: var(--accent-color);
+            padding: 5px 15px;
+            border-radius: 50px;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff2a5f, #ff6a00);
+            color: #fff;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.2rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 5px 15px rgba(255, 42, 95, 0.4);
+        }
+
+        .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(255, 42, 95, 0.6);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .feature-card h3 {
+            margin-top: 0;
+            color: var(--accent-color);
+        }
+
+        .feature-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-bottom: 0;
+        }
+
+        footer {
+            margin-top: 60px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>DiKrolVPN</h1>
+            <p>Твой личный ключ к свободному интернету</p>
+        </header>
+
+        <main>
+            <div class="hero">
+                <span class="badge">🔥 Решение найдено</span>
+                <h2>Забудь про лаги на YouTube</h2>
+                <p>
+                    DiKrolVPN использует передовые протоколы обхода блокировок и замедлений. 
+                    Смотри видео в 4K качестве без бесконечной загрузки и буферизации уже сегодня.
+                </p>
+                <a href="#download" class="btn">Скачать DiKrolVPN</a>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <h3>Full HD & 4K</h3>
+                    <p>Высокая скорость соединения, оптимизированная под видео-стриминг.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Обход DPI</h3>
+                    <p>Маскировка трафика под обычный веб-серфинг (HTTPS).</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Полная анонимность</h3>
+                    <p>Мы не ведем логи вашей активности и защищаем личные данные.</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 DiKrolVPN. Все права защищены. Разработано для свободы сети.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
